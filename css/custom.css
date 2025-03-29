@@ -28,18 +28,10 @@
   /* From styletile */
 
   /* Fonts */
-  @font-face {
-    font-family: Rubik-Regular;
-    src: url(../fonts/Rubik-Regular.ttf);
-  }
-  @font-face {
-    font-family: Rubik-Light;
-    src: url(../fonts/Rubik-Light.ttf);
-  }
-  @font-face {
-    font-family: Rubik-Bold;
-    src: url(../fonts/Rubik-Bold.ttf);
-  }
+ @font-face {
+  font-family: Rubik-Bold;
+  src: url();
+ }
 
   --logotype-font: "Rubik-Bold", sans-serif;
   --headline-font: "Rubik-Bold", sans-serif;
