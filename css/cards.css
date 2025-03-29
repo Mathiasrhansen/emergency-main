@@ -32,7 +32,7 @@
   object-fit: cover;
 }
 .news_card {
-  background-color: var(--article-background-color);
+  background-color: var(--news-background-color);
   display: grid;
   grid-template-rows: repeat(min-content);
   gap: 0.4rem;

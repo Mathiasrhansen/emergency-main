@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --primary-bg-color: #e8ebee; /* used */
+  --primary-bg-color: #FCEB94; /* used */
   --primary-font-color: #474d52; /* used */
 
   --secondary-bg-color: #5d656c; /* used */
@@ -28,9 +28,22 @@
   /* From styletile */
 
   /* Fonts */
-  --logotype-font: "Roboto", sans-serif;
-  --headline-font: "Roboto", sans-serif;
-  --body-font: "Roboto", sans-serif;
+  @font-face {
+    font-family: Rubik-Regular;
+    src: url(../fonts/Rubik-Regular.ttf);
+  }
+  @font-face {
+    font-family: Rubik-Light;
+    src: url(../fonts/Rubik-Light.ttf);
+  }
+  @font-face {
+    font-family: Rubik-Bold;
+    src: url(../fonts/Rubik-Bold.ttf);
+  }
+
+  --logotype-font: "Rubik-Bold", sans-serif;
+  --headline-font: "Rubik-Bold", sans-serif;
+  --body-font: "Rubik-Bold", sans-serif;
   --link-font: "Calibri", sans-serif;
 
   /* Text sizes */
@@ -58,20 +71,20 @@
   --form-submit-color-inverted: #bbc3ca;
 
   /* Background colors */
-  --logotype-background-color: #a9aaae;
-  --header-background-color: #cfd5e5;
-  --article-background-color: #dbdde3;
-  --news-background-color: #dbdde3;
-  --news-background-color-inverted: #eeebe9;
+  --logotype-background-color: #000000;
+  --header-background-color: #6F90EB;
+  --article-background-color: #FFFFFF;
+  --news-background-color: #FFFAE2;
+  --news-background-color-inverted: #DBE2F5;
   --info-background-color: #dbdde3;
-  --headline-bg-color: #dbdde3;
-  --headline-bg-color-alert: #dbdde3;
-  --headline-bg-color-inverted: #dbdde3;
+  --headline-bg-color: #FF4B00;
+  --headline-bg-color-alert: #FF4B00;
+  --headline-bg-color-inverted: #000000;
   --bodytext-bg-color: #dbdde3;
   --bodytext-bg-color-inverted: #dbdde3;
   --cta-text-bg-color: #dbdde3;
   --cta-text-bg-color-inverted: #dbdde3;
-  --followup-text-bg-color: #e8ebee;
+  --followup-text-bg-color: #dbdde3;
   --followup-text-bg-color-inverted: #dbdde3;
   --form-background-color: #c5c7ce;
   --form-text-color: #dbdde3;
@@ -81,6 +94,6 @@
   --form-submit-bg-color-inverted: #dbdde3;
 
   /* Info-boxes */
-  --info-bg-color-yellow: #d6d5ce;
-  --info-bg-color-green: #a6a6a0;
+  --info-bg-color-yellow: #FFFae2;
+  --info-bg-color-green: #def5db;
 }
