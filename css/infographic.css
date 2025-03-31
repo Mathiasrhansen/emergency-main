@@ -29,3 +29,52 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+#img-container-1, #img-container-2, #img-container-3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fadeOut{
+  animation: fade 1s forwards;
+}
+
+.fadeIn{
+  animation: fade 1s backwards;
+}
+
+.wiggle{
+  animation: wiggle 1.5s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(+50);
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle{
+  0%{
+    transform: rotate(0deg);
+  }
+  20%{
+    transform: rotate(2deg);
+  }
+  40%{
+    transform: rotate(-2deg);
+  }
+  60%{
+    transform: rotate(0deg);
+  }
+  80%{
+    transform: rotate(2deg);
+  }
+  100%{
+    transform: rotate(-2deg);
+  }
+}

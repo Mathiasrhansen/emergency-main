@@ -18,7 +18,7 @@
   /* Borders */
   --border-color: #007bff; /* used */
   --border-color-light: #f7f5c2; /* used */
-  --border-radius: 0.25rem;
+  --border-radius: 1rem;
 
   /* Links */
   --link-color: #84888e; /* used */
@@ -28,15 +28,12 @@
   /* From styletile */
 
   /* Fonts */
- @font-face {
-  font-family: Rubik-Bold;
-  src: url();
- }
-
   --logotype-font: "Rubik-Bold", sans-serif;
   --headline-font: "Rubik-Bold", sans-serif;
   --body-font: "Rubik-Bold", sans-serif;
-  --link-font: "Calibri", sans-serif;
+  --link-font: "Rubik-Medium", sans-serif;
+  --default-font: "Rubik-Regular", sans-serif;
+  --subheading-font: "Rubik-Light", sans-serif;
 
   /* Text sizes */
   --logotype-size: 1.5rem;
@@ -74,7 +71,7 @@
   --headline-bg-color-inverted: #000000;
   --bodytext-bg-color: #dbdde3;
   --bodytext-bg-color-inverted: #dbdde3;
-  --cta-text-bg-color: #dbdde3;
+  --cta-text-bg-color: #08257b;
   --cta-text-bg-color-inverted: #dbdde3;
   --followup-text-bg-color: #dbdde3;
   --followup-text-bg-color-inverted: #dbdde3;
@@ -85,7 +82,12 @@
   --form-submit-bg-color: #dbdde3;
   --form-submit-bg-color-inverted: #dbdde3;
 
+  --cta-news-red: #FFA680;
+  --cta-news-blue: #6F90EB;
+
   /* Info-boxes */
   --info-bg-color-yellow: #FFFae2;
   --info-bg-color-green: #def5db;
+  --info-bg-color-red: #FEB5A4;
+  --info-bg-color-null: #fff;
 }
