@@ -36,6 +36,20 @@
   margin-right: auto;
 }
 
+.gemmeleg{
+  /* visibility: hidden; */
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes hiding{
+  to{
+    transform: translateX();
+  }
+  from{
+    transform: translateX(-200);
+  }
+}
+
 .fadeOut{
   animation: fade 1s forwards;
 }

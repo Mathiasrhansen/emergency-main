@@ -90,4 +90,8 @@
   --info-bg-color-green: #def5db;
   --info-bg-color-red: #FEB5A4;
   --info-bg-color-null: #fff;
+
+  /* Forms */
+  --form-bg-color: #FFFFFF;
+  --form-bg-accent-color: #DBE2F5;
 }
