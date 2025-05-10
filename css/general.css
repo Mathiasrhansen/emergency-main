@@ -10,6 +10,25 @@ ul,
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Rubik-Bold;
+  src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-Regular;
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik-Light;
+  src: url(../fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+  font-family: Rubik-Medium;
+  src: url(../fonts/Rubik-Medium.ttf);
+}
 
 body {
   font-family: var(--default-font);
@@ -28,7 +47,7 @@ footer {
 }
 #main-disclamer {
   height: 180px;
-  background-color: var(--header-background-color);
+  background-color: var(--headline-bg-color);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -73,6 +92,20 @@ main > h1 {
   padding: 5px 3rem 0 3rem;
   width: calc(80% - 6rem);
 }
+
+.underrubrik-1 {
+  font-family: var(--subheading-font);
+  font-size: var(--headline1-size);
+  color: var(--headline-color-inverted);
+  grid-column: 1/-1;
+}
+
+/* Ikke i brug */
+/* .underrubrik-2 {
+  font-family: var(--subheading-font);
+  font-size: var(--headline2-size);
+  color: var(--headline-color);
+} */
 
 /* NAVIGATION STRUCTURES */
 header > nav {
@@ -129,7 +162,7 @@ footer a {
   font-size: 0.7rem;
 }
 .yellow,
-.green {
+.green, .red, .unselected {
   padding: 1.5rem 1rem 0.5rem 1rem;
 }
 .yellow {
@@ -137,4 +170,12 @@ footer a {
 }
 .green {
   background-color: var(--info-bg-color-green);
+}
+
+.red{
+  background-color: var(--info-bg-color-red);
+}
+
+.unselected{
+  background-color: var(--info-bg-color-null);
 }

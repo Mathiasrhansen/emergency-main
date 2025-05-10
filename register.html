@@ -16,28 +16,96 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
+          <a href="index.html"> HÅRKRISEN </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li>
+            <a class="menuItem" href="instruction.html">Hjælp til håret </a>
+          </li>
+          <li><a class="menuItem" href="register.html">Indsend dit tip</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>INDSEND DIT TIP</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Tips og råd</h2>
+          <p>
+            Da der endnu ikke er fundet nogen kur mod morgenhår, tager vi i
+            øjeblikket imod alle tips og råd, som vi kan dele videre.
+          </p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset id="webform">
+            <legend>Kontaktoplysninger</legend>
+            <div class="form-group">
+              <label for="full-name">Skriv dit fulde navn:</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                placeholder="Navn"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Skriv din email:</label>
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <label for="tlf">Skriv dit telefonnummer:</label>
+              <!-- <input
+                id="num"
+                type="range"
+                value=""
+                min="11111111"
+                max="99999999"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output></output> -->
+              <input type="tel" name="tlf" id="phone-num" />
+            </div>
+          </fieldset>
+          <fieldset id="webform">
+            <legend>Dit tip</legend>
+            <label for="tip">Beskriv kort dit tip</label>
+            <textarea name="tip" id="tip" cols="100" rows="10"></textarea>
+            <label for="equipment">Kræver dit tip noget udstyr?</label>
+            <input type="radio" name="equipment" id="equipment-yes" />
+            <label for="equipment-yes">Ja</label>
+            <input type="radio" name="equipment" id="equipment-no" />
+            <label for="equipment-no">Nej</label>
+            <div class="hidden" id="extra">
+              <label for="equipment-input">Udstyr:</label>
+              <input type="text" name="equipment-input" id="equipment-input" />
+            </div>
+          </fieldset>
+          <button id="submit_btn" type="button">Send</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+          <div>
+            <h3>Navn:</h3>
+            <p id="sumName"></p>
+          </div>
+          <div>
+            <h3>Email:</h3>
+            <p id="sumEmail"></p>
+          </div>
+          <div>
+            <h3>Telefonnummer:</h3>
+            <p id="sumNum"></p>
+          </div>
+          <div>
+            <h3>Dit tip:</h3>
+            <p id="sumTip"></p>
+            <h3>Udstyr:</h3>
+            <p id="sumRadio"></p>
+          </div>
+          <button id="reset_btn" type="reset">Godkend og luk</button>
         </article>
       </section>
     </main>
@@ -67,5 +135,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="js/register.js"></script>
   </body>
 </html>
